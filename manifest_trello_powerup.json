@@ -1,0 +1,42 @@
+{
+  "name": "Trello Markdown Importer",
+  "description": "Importa cart\u00f5es e checklists de um arquivo Markdown para um quadro Trello.",
+  "author": "Connect Digital Hub",
+  "capabilities": {
+    "board-buttons": [
+      {
+        "text": "Importar .md",
+        "callback": "importMarkdown"
+      }
+    ],
+    "card-buttons": [
+      {
+        "text": "Atualizar Checklist",
+        "callback": "updateChecklist"
+      }
+    ],
+    "card-badges": [],
+    "card-back-section": {
+      "title": "Importa\u00e7\u00e3o .md",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1041/1041916.png",
+      "content": {
+        "type": "iframe",
+        "url": "https://seuprojeto.vercel.app/section.html",
+        "height": 250
+      }
+    },
+    "on-enable": {
+      "url": "https://seuprojeto.vercel.app/on-enable.html"
+    },
+    "on-disable": {
+      "url": "https://seuprojeto.vercel.app/on-disable.html"
+    }
+  },
+  "connectors": {
+    "iframe": {
+      "url": "https://seuprojeto.vercel.app",
+      "height": 500
+    }
+  },
+  "version": "1.0"
+}
